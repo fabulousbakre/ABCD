@@ -1,0 +1,77 @@
+/* Layout */
+.container {
+    max-width: 1160px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-3x3 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+/* Buttons and Links */
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.btn {
+    border: 2px solid var(--blue);
+    padding: 10px 35px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--white);
+    transition: 0.2s ease-in;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--blue);
+    transition: 0.2s ease-in;
+}
+
+.btn-tertiary {
+    background-color: var(--cream);
+    border: none;
+    color: var(--blue);
+    transition: 0.2s ease-in;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue);
+}
+
+.btn-secondary:hover,
+.btn-tertiary:hover {
+    background-color: var(--extra-lightblue);
+}
+
+/* Paddings and Margins */
+.py-8 {
+    padding: 80px 0;
+}
+
+.py-10 {
+    padding: 100px 0;
+}
